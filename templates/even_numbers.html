@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Even Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .even-number {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ n }} Even Numbers</h1>
+        <p>
+            {% for number in numbers %}
+            <span class="even-number">{{ number }}</span>
+            {% endfor %}
+        </p>
+    </div>
+</body>
+</html>
